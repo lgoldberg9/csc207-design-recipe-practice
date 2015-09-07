@@ -9,14 +9,37 @@ public class DesignRecipePractice {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String[] arr1 = {"Peter", "Osera"};
-		String[] arr2 = {"Peter", "Osera"};
-		String[] arr3 = {"Peter", "Osera"};
-		String[] arr4 = {"Peter", "Osera"};
+		String str1 = "Michael";
+		
+		String[] arr2 = {};
+		String str2 = "Michael";
+		
+		String[] arr3 = {"Peter"};
+		String str3 = "Michael";
+		
+		String[] arr4 = null;
+		String str4 = "Michael";
+		
 		String[] arr5 = {"Peter", "Osera"};
+		String str5 = "";
+		
 		String[] arr6 = {"Peter", "Osera"};
-		String[] arr7 = {"Peter", "Osera"};
-		String[] arr8 = {"Peter", "Osera"};
-		System.out.println(Arrays.toString(intersperse(arr, "Michael")));
+		String str6 = null;
+		
+		String[] arr7 = {"Peter", "Osera", "Peter", "Osera"};
+		String str7 = "Michael";
+		
+		String[] arr8 = null;
+		String str8 = null;
+		
+		System.out.println("1: " + Arrays.toString(intersperse(arr1, str1)));
+		System.out.println("2: " + Arrays.toString(intersperse(arr2, str2)));
+		System.out.println("3: " + Arrays.toString(intersperse(arr3, str3)));
+		System.out.println("4: " + Arrays.toString(intersperse(arr4, str4)));
+		System.out.println("5: " + Arrays.toString(intersperse(arr5, str5)));
+		System.out.println("6: " + Arrays.toString(intersperse(arr6, str6)));
+		System.out.println("7: " + Arrays.toString(intersperse(arr7, str7)));
+		System.out.println("8: " + Arrays.toString(intersperse(arr8, str8)));
 	}
 
 	private static String[] intersperse(String[] arr, String foo) {
